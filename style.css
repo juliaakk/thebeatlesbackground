@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0px;
+    background: #5fa76b;
+}
+
+@font-face {
+    font-family: julia;
+    src: url(./badgline/Badgline.otf);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: #5d916a;
+    background-color: #165a27;
+  padding: 12px 0;
+  margin-top: 0;
+font-family: julia;
+}
+
+.container{
+    width: 800px;
+    height: 460px;
+    overflow:hidden;
+    top: 50%;
+    left: 50%;
+position: absolute;
+transform: translate(-50%, -50%);
+}
+
+.imagem img{
+    height: 100%;
+    width: 100%;
+}
+
+.bar{
+    background-color: #85b892;
+    width: 35px;
+    height: 7px;
+    margin: 5px;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 12px;
+}
+
+.bar:hover{
+    background-color: #b9ccbe;
+}
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+#image2:checked ~ .navegacao{
+    background-color: #1a5e2e;
+}
+
+input{
+    display: none;
+}
+.imagens{
+    display: flex;
+    height: 100%;
+    width: 600%;
+}
+.imagem{
+width: 16.66666666666667%;
+transition: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+#image1:checked ~.img1{
+    margin-left: 0;
+
+}
+
+#image2:checked ~ .img1{
+    margin-left: -16.66666666666667%;
+}
+
+
+#image3:checked ~ .img1{
+    margin-left: -33.33333333333333%;
+}
+
+
+#image4:checked ~ .img1{
+    margin-left: -50%;
+}
+
+#image5:checked ~ .img1{
+    margin-left: -66.66666666666667%;
+}
+
+#image6:checked ~ .img1{
+    margin-left:  -83.33333333333334%;
+}
+
+footer{
+    margin-top: 43%;
+    background-color: #1a5e2e;
+   padding: 0.7%;
+   
+}
